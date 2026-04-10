@@ -4,7 +4,14 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm px-6 py-4 flex justify-between items-center">
-      <h1 className="text-2xl font-bold text-[#8B1E1E]">AHAVOR</h1>
+      <div className="flex items-center gap-2">
+        <img
+          src="/images/logo.png"
+          alt="Ahavor Logo"
+          className="w-10 h-10 object-contain"
+        />
+        <h1 className="font-bold text-[#8B1E1E] ">AHAVOR FOODS</h1>
+      </div>
 
       <div className="hidden md:flex space-x-8 font-medium">
         <Link href="/">Home</Link>
